@@ -15,6 +15,10 @@ import { MissingPathComponent } from './shared/missing-path/missing-path.compone
     HomeComponent,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
+      { path: 'services', component: HomeComponent },
+      { path: 'portfolio', component: HomeComponent },
+      { path: 'company', component: HomeComponent },
+      { path: 'blog', component: HomeComponent },
       { path: '404', component: MissingPathComponent },
       { path: '**', redirectTo: '/404', pathMatch: 'full' },
     ]),

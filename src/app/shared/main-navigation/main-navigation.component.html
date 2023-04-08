@@ -41,6 +41,7 @@
     [class]="
       'main-nav__link-list' + (isMenuOpen ? ' main-nav__link-list--open' : '')
     "
+    data-test="main-nav__link-list"
     id="main-menu"
   >
     <li
@@ -48,8 +49,9 @@
       class="main-nav__link-list__item"
     >
       <a
-        [href]="link === 'Home' ? '/' : link.toLowerCase()"
+        [href]="link.toLowerCase()"
         class="main-nav__link-list__item__link"
+        data-test="main-nav__link"
       >
         <span class="number"> 0{{ index + 1 }} </span>
         <span class="text">

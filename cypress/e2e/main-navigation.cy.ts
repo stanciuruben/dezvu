@@ -10,4 +10,10 @@ describe('Main Navigation', () => {
         expect(img[0].clientHeight).to.be.greaterThan(0);
       });
   });
+
+  it('should render 404 when path is missing with a link back to home', () => {
+    cy.visit('http://localhost:4200/some-crazy-route');
+    cy.get('h1').contains('Error: 404 | Page Not Found');
+    cy.get('a[href="/home"]').should('be.visible');
+  });
 });

@@ -1,7 +1,61 @@
-<nav data-test="main-nav">
+<nav data-test="main-nav" class="main-nav">
   <img
     src="/assets/images/logo-img.png"
     alt="logo"
+    class="main-nav__logo"
     data-test="main-nav__logo"
   />
+  <button
+    type="button"
+    class="main-nav__menu-toggle"
+    data-collapse-toggle="main-menu"
+    aria-controls="main-menu"
+    data-test="main-nav__menu-toggle"
+    [attr.aria-expanded]="isMenuOpen"
+    (click)="toggleMenu()"
+  >
+    <span
+      aria-hidden="true"
+      [class]="
+        'main-nav__menu-toggle__icon' +
+        (isMenuOpen ? ' main-nav__menu-toggle__icon--open' : '')
+      "
+    ></span>
+    <span
+      aria-hidden="true"
+      [class]="
+        'main-nav__menu-toggle__icon' +
+        (isMenuOpen ? ' main-nav__menu-toggle__icon--open' : '')
+      "
+    ></span>
+    <span
+      aria-hidden="true"
+      [class]="
+        'main-nav__menu-toggle__icon' +
+        (isMenuOpen ? ' main-nav__menu-toggle__icon--open' : '')
+      "
+    ></span>
+    <div class="sr-only">Open main menu</div>
+  </button>
+  <ul
+    [class]="
+      'main-nav__link-list' + (isMenuOpen ? ' main-nav__link-list--open' : '')
+    "
+    id="main-menu"
+  >
+    <li
+      *ngFor="let link of links; let index = index"
+      class="main-nav__link-list__item"
+    >
+      <a
+        [href]="link === 'Home' ? '/' : link.toLowerCase()"
+        class="main-nav__link-list__item__link"
+      >
+        <span class="number"> 0{{ index + 1 }} </span>
+        <span class="text">
+          {{ link }}
+        </span>
+      </a>
+    </li>
+  </ul>
 </nav>

@@ -1,10 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+
+import { MainNavigationComponent } from './shared/main-navigation/main-navigation.component';
+import { MissingPathComponent } from './shared/missing-path/missing-path.component';
+import { HomeComponent } from './home/home/home.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
+      imports: [
+        RouterModule,
+        MainNavigationComponent,
+        HomeComponent,
+        MissingPathComponent,
+      ],
     }).compileComponents();
   });
 

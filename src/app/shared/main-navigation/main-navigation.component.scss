@@ -1,5 +1,6 @@
 @import "../style/variables";
 @import "../style/utilities.scss";
+@import "../style/animations.scss";
 
 .main-nav {
   position: absolute;
@@ -29,6 +30,7 @@
     background-color: transparent;
     width: 2rem;
     height: 1.5rem;
+    z-index: 0;
     cursor: pointer;
 
     &:hover &__icon,
@@ -135,17 +137,18 @@
 
     &__link-list {
       display: none;
-      position: absolute;
-      left: 50%;
-      top: 3rem;
-      width: 100%;
-      height: calc(100vh - 3rem);
+      position: fixed;
+      right: -2rem;
+      top: -1rem;
+      width: 100vw;
+      min-height: 100vh;
       background-color: $white-color;
       flex-direction: column;
       align-items: end;
       justify-content: center;
       padding: 0 3rem;
-      transform: translateX(-50%);
+      z-index: 150;
+      transform: translateX(-100%);
 
       &--open {
         display: flex;
@@ -154,6 +157,10 @@
 
     &__menu-toggle {
       display: block;
+      position: fixed;
+      right: 1rem;
+      top: 0.5rem;
+      z-index: 200;
     }
   }
 }

@@ -39,7 +39,8 @@
   </button>
   <ul
     [class]="
-      'main-nav__link-list' + (isMenuOpen ? ' main-nav__link-list--open' : '')
+      'main-nav__link-list' +
+      (isMenuOpen ? ' main-nav__link-list--open slide-from-left' : '')
     "
     data-test="main-nav__link-list"
     id="main-menu"

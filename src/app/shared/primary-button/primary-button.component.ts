@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import type PrimaryButton from '../types/primary-button';
+
 @Component({
   selector: 'app-primary-button',
   standalone: true,
@@ -9,9 +11,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./primary-button.component.scss'],
 })
 export class PrimaryButtonComponent {
-  @Input() text: string | undefined;
-  @Input() href: string | undefined;
-  @Input() dataAttribute: string | undefined;
-  @Input() type: string | undefined;
-  @Input() class: string | undefined;
+  @Input() text: PrimaryButton['text'];
+  @Input() href: PrimaryButton['href'];
+  @Input() testAttribute: PrimaryButton['testAttribute'];
+  @Input() type: PrimaryButton['type'];
+  @Input() class: PrimaryButton['class'];
 }

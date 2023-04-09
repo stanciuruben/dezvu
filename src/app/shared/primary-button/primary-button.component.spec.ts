@@ -36,12 +36,12 @@ describe('PrimaryButtonComponent', () => {
 
     it('should have the data-test attribute defined in the input', () => {
       const testAttribute = 'test-app-cta';
-      component.dataAttribute = testAttribute;
+      component.testAttribute = testAttribute;
       fixture.detectChanges();
       const buttonElement = fixture.debugElement.query(
         By.css(`button[data-test="${testAttribute}"]`)
       );
-      expect(component.dataAttribute).toBeDefined();
+      expect(component.testAttribute).toBeDefined();
       expect(buttonElement).toBeTruthy();
     });
 
@@ -49,7 +49,7 @@ describe('PrimaryButtonComponent', () => {
       const buttonElement = fixture.debugElement.query(
         By.css('button[data-test="app-primary-button"]')
       );
-      expect(component.dataAttribute).toBeUndefined();
+      expect(component.testAttribute).toBeUndefined();
       expect(buttonElement).toBeTruthy();
     });
 
@@ -111,12 +111,12 @@ describe('PrimaryButtonComponent', () => {
 
     it('should have the data-test attribute defined in the input', () => {
       const testAttribute = 'test-app-cta';
-      component.dataAttribute = testAttribute;
+      component.testAttribute = testAttribute;
       fixture.detectChanges();
       const linkElement = fixture.debugElement.query(
         By.css(`a[data-test="${testAttribute}"]`)
       );
-      expect(component.dataAttribute).toBeDefined();
+      expect(component.testAttribute).toBeDefined();
       expect(linkElement).toBeTruthy();
     });
 
@@ -124,7 +124,7 @@ describe('PrimaryButtonComponent', () => {
       const linkElement = fixture.debugElement.query(
         By.css(`a[data-test="app-primary-button"]`)
       );
-      expect(component.dataAttribute).toBeUndefined();
+      expect(component.testAttribute).toBeUndefined();
       expect(linkElement).toBeTruthy();
     });
 

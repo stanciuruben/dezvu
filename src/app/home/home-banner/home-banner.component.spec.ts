@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeBannerComponent } from './home-banner.component';
-import { PrimaryButtonComponent } from '../../shared/primary-button/primary-button.component';
+import { PrimaryButtonComponent } from '../../shared/ui/primary-button/primary-button.component';
 import { By } from '@angular/platform-browser';
 
 describe('HomeBannerComponent', () => {

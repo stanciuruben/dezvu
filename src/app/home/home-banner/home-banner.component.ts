@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimaryButtonComponent } from '../../shared/primary-button/primary-button.component';
+import { PrimaryButtonComponent } from '../../shared/ui/primary-button/primary-button.component';
 
 @Component({
   selector: 'app-home-banner',

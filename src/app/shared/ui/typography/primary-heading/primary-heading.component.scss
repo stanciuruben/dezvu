@@ -1,0 +1,38 @@
+@import "../../../style/variables.scss";
+
+.primary-heading {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  color: $black-color;
+  font-family: Jost;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  .primary-heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .primary-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .primary-heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

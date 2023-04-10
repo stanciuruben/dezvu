@@ -1,0 +1,28 @@
+<article
+  attr.data-test="{{ testAttribute ?? 'app-article' }}"
+  class="article fade-in"
+  [style]="'background-image: url(' + backgroundImage + ')'"
+>
+  <div
+    attr.data-test="{{ (testAttribute ?? 'app-article') + '__content' }}"
+    class="article__content fade-in"
+    [style]="'background-image: url(' + contentBackgroundImage + ')'"
+  >
+    <div
+      class="article__content__left slide-from-left"
+      attr.data-test="{{
+        (testAttribute ?? 'app-article') + '__content__left'
+      }}"
+    >
+      <ng-content select="app-article-left"></ng-content>
+    </div>
+    <div
+      attr.data-test="{{
+        (testAttribute ?? 'app-article') + '__content__right'
+      }}"
+      class="article__content__right slide-from-right"
+    >
+      <ng-content select="app-article-right"></ng-content>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,25 @@
+@import "../../../style/variables.scss";
+
+.primary-paragraph {
+  color: $text-color;
+  font-size: 1.2rem;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 1200px) {
+  .primary-paragraph {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .primary-paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .primary-paragraph {
+    font-size: 0.9rem;
+  }
+}

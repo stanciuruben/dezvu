@@ -1,0 +1,13 @@
+@import "../../../style/variables.scss";
+
+.secondary-paragraph {
+  color: $text-color;
+  font-size: 1rem;
+  font-family: Roboto;
+}
+
+@media screen and (max-width: 1200px) {
+  .secondary-paragraph {
+    font-size: 0.9rem;
+  }
+}

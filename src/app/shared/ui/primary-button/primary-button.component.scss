@@ -1,4 +1,9 @@
-@import "../style/variables.scss";
+@import "../../style/variables.scss";
+
+.primary-button-container {
+  position: relative;
+  height: 62px;
+}
 
 .primary-button {
   display: inline-block;
@@ -33,6 +38,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .primary-button-container {
+    position: relative;
+    height: 55px;
+  }
+
   .primary-button {
     font-weight: 700;
     font-size: 1rem;
@@ -49,6 +59,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .primary-button-container {
+    position: relative;
+    height: 35px;
+  }
+
   .primary-button {
     font-weight: 500;
     font-size: 1rem;

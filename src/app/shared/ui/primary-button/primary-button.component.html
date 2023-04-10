@@ -1,0 +1,18 @@
+<div class="primary-button-container">
+  <button
+    [type]="type ?? 'button'"
+    [class]="'primary-button ' + (class ? 'primary-button--' + class : '')"
+    attr.data-test="{{ testAttribute ?? 'app-primary-button' }}"
+    *ngIf="href === undefined"
+  >
+    {{ text }}
+  </button>
+  <a
+    [class]="'primary-button ' + (class ? 'primary-button--' + class : '')"
+    [href]="href"
+    *ngIf="href"
+    attr.data-test="{{ testAttribute ?? 'app-primary-button' }}"
+  >
+    {{ text }}
+  </a>
+</div>

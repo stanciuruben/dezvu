@@ -1,11 +1,1 @@
-app-article {
-  ::ng-deep {
-    .article__content {
-      flex-direction: column;
-
-      &__left {
-        width: 100%;
-      }
-    }
-  }
-}
+@import "../../shared/style/animations.scss";

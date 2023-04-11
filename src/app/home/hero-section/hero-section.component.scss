@@ -5,6 +5,7 @@ app-article {
   ::ng-deep {
     & .article {
       padding: 5rem;
+
       & > .article__content {
         padding: 0;
         flex-direction: row-reverse;
@@ -132,6 +133,7 @@ app-article {
   app-article {
     ::ng-deep {
       & .article {
+        background-position: right;
         & > .article__content {
           & > .article__content__right {
             width: calc(50% - 1.5rem);
@@ -171,9 +173,9 @@ app-article {
   app-article {
     ::ng-deep {
       & .article {
-        padding: 2.5rem 0;
+        padding: 4rem 0;
         & > .article__content {
-          margin: 2.5rem 0;
+          margin: 4rem 0;
           width: 100%;
           flex-direction: column-reverse;
           & > .article__content__right {

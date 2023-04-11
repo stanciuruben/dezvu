@@ -1,0 +1,81 @@
+@import "../../shared/style/variables.scss";
+
+app-article {
+  ::ng-deep {
+    & .article {
+      & > .article__content {
+        flex-direction: column;
+        padding: 0;
+        margin: 5rem auto;
+
+        .article__content__right {
+          width: 100%;
+
+          & app-article-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+          }
+        }
+
+        .article__content__left {
+          & app-article-left {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            text-align: center;
+
+            & .secondary-heading {
+              position: relative;
+              display: inline-block;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0.2rem;
+                z-index: -1;
+                width: 100%;
+                height: 0.5rem;
+                background-color: $light-blue-color;
+              }
+            }
+
+            & .secondary-paragraph {
+              max-width: 720px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content {
+        .article__content__right {
+          & app-article-right {
+            position: relative;
+            justify-content: center;
+            justify-items: stretch;
+            gap: 1rem;
+          }
+        }
+
+        .article__content__left {
+          & app-article-left {
+            & .secondary-paragraph {
+              width: 90%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

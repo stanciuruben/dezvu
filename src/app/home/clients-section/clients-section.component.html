@@ -1,0 +1,18 @@
+<app-article testAttribute="app-home__clients">
+  <app-article-left>
+    <app-secondary-heading> Big Clients </app-secondary-heading>
+    <app-secondary-paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incid idunt ut labore et dolore magna aliqua.
+    </app-secondary-paragraph>
+  </app-article-left>
+  <app-article-right>
+    <app-icon-card
+      *ngFor="let card of cards"
+      [icon]="card.icon"
+      [alt]="card.alt"
+      [name]="card.name"
+      [bgColor]="card.bgColor"
+    ></app-icon-card>
+  </app-article-right>
+</app-article>

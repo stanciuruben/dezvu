@@ -9,9 +9,7 @@
     width: 100px;
 
     & img {
-      display: block;
-      width: auto;
-      margin: 0 auto;
+      object-fit: contain;
     }
   }
 
@@ -32,7 +30,7 @@
       width: 90px;
 
       & img {
-        width: auto;
+        object-fit: contain;
       }
     }
   }
@@ -49,7 +47,7 @@
       width: 80px;
 
       & img {
-        width: auto;
+        object-fit: contain;
       }
     }
   }

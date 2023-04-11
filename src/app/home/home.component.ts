@@ -3,12 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { SolutionsSectionComponent } from './solutions-section/solutions-section.component';
+import { ClientsSectionComponent } from './clients-section/clients-section.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  imports: [CommonModule, SolutionsSectionComponent, HeroSectionComponent],
+  imports: [
+    CommonModule,
+    SolutionsSectionComponent,
+    HeroSectionComponent,
+    ClientsSectionComponent,
+  ],
 })
 export class HomeComponent {}

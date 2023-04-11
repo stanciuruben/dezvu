@@ -1,0 +1,23 @@
+.secondary-subheading {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .secondary-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .secondary-subheading {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .secondary-subheading {
+    font-size: 0.8rem;
+  }
+}

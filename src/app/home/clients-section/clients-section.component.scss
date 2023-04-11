@@ -17,6 +17,15 @@ app-article {
             justify-content: center;
             gap: 2rem;
             flex-wrap: wrap;
+
+            & .clients__achievements {
+              margin: 2rem auto;
+              width: 100%;
+              gap: 2rem;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+            }
           }
         }
 
@@ -73,6 +82,34 @@ app-article {
               width: 90%;
               margin: 0 auto;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content {
+        .article__content__right {
+          & app-article-right app-icon-card {
+            width: 16rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 592px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content {
+        .article__content__right {
+          & app-article-right app-icon-card {
+            width: fit-content;
           }
         }
       }

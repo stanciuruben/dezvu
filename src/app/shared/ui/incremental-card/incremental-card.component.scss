@@ -1,0 +1,44 @@
+.incremental-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 20rem;
+
+  &__number {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Jost;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .incremental-card {
+    max-width: 20rem;
+
+    &__number {
+      font-size: 40px;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .incremental-card {
+    max-width: 15rem;
+
+    &__number {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}

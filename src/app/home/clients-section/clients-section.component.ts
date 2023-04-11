@@ -11,6 +11,10 @@ import {
   IconCard,
   IconCardComponent,
 } from 'src/app/shared/ui/icon-card/icon-card.component';
+import {
+  IncrementalCardComponent,
+  IncrementalCard,
+} from '../../shared/ui/incremental-card/incremental-card.component';
 
 @Component({
   selector: 'app-clients-section',
@@ -25,6 +29,7 @@ import {
     SecondaryHeadingComponent,
     SecondaryParagraphComponent,
     IconCardComponent,
+    IncrementalCardComponent,
   ],
 })
 export class ClientsSectionComponent {
@@ -58,6 +63,24 @@ export class ClientsSectionComponent {
       alt: 'Purple box with white text that says "Woo" | WooCommerce logo',
       icon: '/assets/images/woocommerce-icon.png',
       bgColor: '#fff0fc',
+    },
+  ];
+
+  achievements: IncrementalCard[] = [
+    {
+      isThousands: false,
+      number: 25,
+      text: 'Years of Experience',
+    },
+    {
+      isThousands: true,
+      number: 15,
+      text: 'Satisfied Clients',
+    },
+    {
+      isThousands: true,
+      number: 13,
+      text: 'Projects Completed In 29 Countries',
     },
   ];
 }

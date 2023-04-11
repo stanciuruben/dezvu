@@ -14,5 +14,13 @@
       [name]="card.name"
       [bgColor]="card.bgColor"
     ></app-icon-card>
+    <div class="clients__achievements">
+      <app-incremental-card
+        *ngFor="let achievement of achievements"
+        [text]="achievement.text"
+        [number]="achievement.number"
+        [isThousands]="achievement.isThousands"
+      ></app-incremental-card>
+    </div>
   </app-article-right>
 </app-article>

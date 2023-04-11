@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
 import { MainNavigationComponent } from './shared/main-navigation/main-navigation.component';
-import { HomeComponent } from './home/home/home.component';
+import { HomeComponent } from './home/home.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

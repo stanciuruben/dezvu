@@ -2,19 +2,20 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MainNavigationComponent } from 'src/app/shared/main-navigation/main-navigation.component';
-import { HomeBannerComponent } from '../home-banner/home-banner.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { PrimaryHeadingComponent } from 'src/app/shared/ui/typography/primary-heading/primary-heading.component';
-import { SecondaryHeadingComponent } from '../../shared/ui/typography/secondary-heading/secondary-heading.component';
+import { SecondaryHeadingComponent } from '../shared/ui/typography/secondary-heading/secondary-heading.component';
 import { PrimaryParagraphComponent } from 'src/app/shared/ui/typography/primary-paragraph/primary-paragraph.component';
 import {
   ArticleComponent,
   ArticleRightSection,
   ArticleLeftSection,
-} from '../../shared/ui/article/article.component';
-import { SecondaryParagraphComponent } from '../../shared/ui/typography/secondary-paragraph/secondary-paragraph.component';
+} from '../shared/ui/article/article.component';
+import { SecondaryParagraphComponent } from '../shared/ui/typography/secondary-paragraph/secondary-paragraph.component';
 import { IconComponent } from 'src/app/shared/ui/icon/icon.component';
-import { PrimaryButtonComponent } from '../../shared/ui/primary-button/primary-button.component';
-import { CardComponent } from '../../shared/ui/card/card.component';
+import { PrimaryButtonComponent } from '../shared/ui/primary-button/primary-button.component';
+import { CardComponent } from '../shared/ui/card/card.component';
+import { SolutionsSectionComponent } from './solutions-section/solutions-section.component';
 
 @Component({
   selector: 'app-home',
@@ -35,6 +36,7 @@ import { CardComponent } from '../../shared/ui/card/card.component';
     IconComponent,
     PrimaryButtonComponent,
     CardComponent,
+    SolutionsSectionComponent,
   ],
 })
 export class HomeComponent {}

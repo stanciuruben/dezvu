@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MainNavigationComponent } from './shared/main-navigation/main-navigation.component';
-import { HomeComponent } from './home/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { MissingPathComponent } from './shared/missing-path/missing-path.component';
 
 @NgModule({

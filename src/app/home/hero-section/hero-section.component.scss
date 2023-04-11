@@ -1,0 +1,236 @@
+@import "../../shared/style/animations.scss";
+@import "../../shared//style//variables.scss";
+
+app-article {
+  ::ng-deep {
+    & .article {
+      padding: 5rem;
+      & > .article__content {
+        padding: 0;
+        flex-direction: row-reverse;
+
+        & > .article__content__right {
+          width: calc(50% - 2.5rem);
+          & app-article-right {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            & > app-primary-heading > .primary-heading > span {
+              display: block;
+            }
+
+            & .hero-page-number {
+              font-size: 1.4rem;
+              font-weight: 600;
+              font-family: Jost;
+              color: $black-color;
+
+              & b {
+                color: $primary-color;
+                margin-left: 0.2rem;
+              }
+            }
+          }
+        }
+
+        & .article__content__left {
+          position: relative;
+          text-align: right;
+
+          & #hero-popup {
+            position: absolute;
+            left: 0;
+            bottom: 2rem;
+            width: 22rem;
+
+            & > app-card > .card {
+              width: 100%;
+              padding: 2rem 0;
+              box-shadow: 0 0 1rem rgba($black-color, 0.2);
+              background-color: $white-color;
+              font-size: 2.2rem;
+              line-height: 2.4rem;
+              font-weight: 500;
+              text-align: center;
+              position: relative;
+
+              & strong {
+                font-weight: 500;
+                color: $primary-color;
+                text-transform: uppercase;
+                display: block;
+              }
+            }
+          }
+
+          & #hero-main-img .card {
+            width: 25rem;
+            max-width: 100%;
+            height: 30rem;
+            transition: transform 0.4s ease;
+            background-color: #d8d8d8;
+            display: inline-block;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            & img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  app-article {
+    ::ng-deep {
+      & .article {
+        padding: 5rem 0;
+        & > .article__content {
+          margin: 5rem auto;
+          & > .article__content__right {
+            width: calc(50% - 1.5rem);
+            & app-article-right {
+              gap: 1.5rem;
+
+              & .hero-page-number {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          & .article__content__left {
+            & #hero-popup {
+              width: 18rem;
+
+              & > app-card > .card {
+                padding: 1.5rem 0;
+                font-size: 1.8rem;
+                line-height: 2rem;
+              }
+            }
+
+            & #hero-main-img .card {
+              width: 20rem;
+              height: 25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  app-article {
+    ::ng-deep {
+      & .article {
+        & > .article__content {
+          & > .article__content__right {
+            width: calc(50% - 1.5rem);
+            & app-article-right {
+              gap: 1rem;
+
+              & .hero-page-number {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          & .article__content__left {
+            & #hero-popup {
+              width: 13rem;
+
+              & > app-card > .card {
+                padding: 1rem 0;
+                font-size: 1.6rem;
+                line-height: 1.8rem;
+                border-bottom-right-radius: 5rem;
+              }
+            }
+
+            & #hero-main-img .card {
+              width: 18rem;
+              height: 22rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  app-article {
+    ::ng-deep {
+      & .article {
+        padding: 2.5rem 0;
+        & > .article__content {
+          margin: 2.5rem 0;
+          width: 100%;
+          flex-direction: column-reverse;
+          & > .article__content__right {
+            text-align: center;
+            width: 380px;
+          }
+
+          & .article__content__left {
+            text-align: center;
+            width: 380px;
+
+            & #hero-popup {
+              width: 14rem;
+              left: -3rem;
+              bottom: 1rem;
+            }
+
+            & #hero-main-img .card {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  app-article {
+    ::ng-deep {
+      & .article {
+        & > .article__content {
+          & > .article__content__right {
+            width: 90%;
+          }
+
+          & .article__content__left {
+            width: 90%;
+
+            & #hero-popup {
+              width: 12rem;
+              left: -1rem;
+              bottom: 0;
+
+              & > app-card > .card {
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+              }
+            }
+
+            & #hero-main-img .card {
+              height: 18rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

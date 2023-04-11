@@ -1,0 +1,36 @@
+<app-article
+  backgroundImage="/assets/images/banner-bg-img.png"
+  testAttribute="app-home__hero"
+>
+  <app-article-left>
+    <figure>
+      <app-card id="hero-main-img">
+        <img
+          src="/assets/images/banner-right-img.jpg"
+          alt="Curly haired woman talking on phone in office"
+        />
+      </app-card>
+      <figcaption class="hero-popup pop-up-from-right" id="hero-popup">
+        <app-card>
+          Actions for <strong>Accessibility</strong> in Design.
+        </app-card>
+      </figcaption>
+    </figure>
+  </app-article-left>
+  <app-article-right>
+    <app-primary-heading>
+      <span>We're</span>{{ " " }}<span>Design Trend</span>{{ " "
+      }}<span>Creators.</span>
+    </app-primary-heading>
+    <app-primary-paragraph>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </app-primary-paragraph>
+    <app-primary-button
+      text="Get Started Now"
+      testAttribute="app-home__hero__cta"
+      href="/services#prices"
+    ></app-primary-button>
+    <p class="hero-page-number">01<b>.</b></p>
+  </app-article-right>
+</app-article>

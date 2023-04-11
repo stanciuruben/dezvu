@@ -2,37 +2,37 @@
 
 .secondary-heading {
   font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 50px;
+  line-height: 50px;
   color: $black-color;
   font-family: Jost;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
   .secondary-heading {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 40px;
   }
 }
 
 @media screen and (max-width: 989px) {
   .secondary-heading {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 34px;
+    line-height: 36px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .secondary-heading {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 
 @media screen and (max-width: 440px) {
   .secondary-heading {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }

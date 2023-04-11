@@ -3,6 +3,7 @@
   background-size: cover;
 
   &__content {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -22,6 +23,7 @@
   .article {
     &__content {
       width: 900px;
+      gap: 3rem;
     }
   }
 }
@@ -40,6 +42,7 @@
     &__content {
       flex-direction: column-reverse;
       padding: 3rem;
+      gap: 2rem;
 
       &__left,
       &__right {
@@ -52,6 +55,7 @@
 @media screen and (max-width: 440px) {
   .article {
     &__content {
+      gap: 1.5rem;
       width: calc(100% - 2rem);
       margin: 2rem 1rem;
       padding: 1rem;

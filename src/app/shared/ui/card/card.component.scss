@@ -1,0 +1,16 @@
+.card {
+  border-radius: 2rem;
+  border-bottom-right-radius: 7rem;
+  border-top-left-radius: 0;
+  overflow: hidden;
+
+  &--tl {
+    border-top-left-radius: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card {
+    border-bottom-right-radius: 5rem;
+  }
+}

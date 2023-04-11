@@ -14,6 +14,7 @@ import {
 import { SecondaryParagraphComponent } from '../../shared/ui/typography/secondary-paragraph/secondary-paragraph.component';
 import { IconComponent } from 'src/app/shared/ui/icon/icon.component';
 import { PrimaryButtonComponent } from '../../shared/ui/primary-button/primary-button.component';
+import { CardComponent } from '../../shared/ui/card/card.component';
 
 @Component({
   selector: 'app-home',
@@ -33,6 +34,7 @@ import { PrimaryButtonComponent } from '../../shared/ui/primary-button/primary-b
     SecondaryParagraphComponent,
     IconComponent,
     PrimaryButtonComponent,
+    CardComponent,
   ],
 })
 export class HomeComponent {}

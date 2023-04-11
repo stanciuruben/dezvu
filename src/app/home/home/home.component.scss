@@ -1,1 +1,114 @@
 @import "../../shared/style/animations.scss";
+
+app-article {
+  ::ng-deep {
+    & .article > .article__content > .article__content__right {
+      width: auto;
+
+      & app-article-right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    & .article > .article__content > .article__content__left {
+      width: auto;
+
+      & .card {
+        width: 25rem;
+        height: 25rem;
+        transition: transform 0.4s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        & img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content > .article__content__right {
+        & app-article-right {
+          gap: 1.5rem;
+        }
+      }
+
+      & .article > .article__content > .article__content__left {
+        & .card {
+          width: 22rem;
+          height: 22rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content > .article__content__right {
+        width: 55%;
+        & app-article-right {
+          gap: 1rem;
+        }
+      }
+
+      & .article > .article__content > .article__content__left {
+        width: 45%;
+        & .card {
+          width: 100%;
+          max-width: 18rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content > .article__content__right {
+        width: 380px;
+        text-align: center;
+      }
+
+      & .article > .article__content > .article__content__left {
+        width: 380px;
+        text-align: center;
+        & .card {
+          display: inline-block;
+          width: 100%;
+          height: 17rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  app-article {
+    ::ng-deep {
+      & .article > .article__content > .article__content__right {
+        width: 90%;
+      }
+
+      & .article > .article__content > .article__content__left {
+        width: 90%;
+        & .card {
+          height: 15rem;
+        }
+      }
+    }
+  }
+}

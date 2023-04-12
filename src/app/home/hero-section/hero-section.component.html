@@ -1,6 +1,10 @@
 <app-article
   backgroundImage="/assets/images/banner-bg-img.png"
   testAttribute="app-home__hero"
+  leftClasses="slide-from-right invisible"
+  leftId="hero-left"
+  rightClasses="slide-from-left invisible"
+  rightId="hero-right"
 >
   <app-article-left>
     <figure>
@@ -10,7 +14,10 @@
           alt="Curly haired woman talking on phone in office"
         />
       </app-card>
-      <figcaption class="hero-popup pop-up-from-right" id="hero-popup">
+      <figcaption
+        class="hero-popup pop-up-from-right invisible"
+        id="hero-popup"
+      >
         <app-card>
           Actions for <strong>Accessibility</strong> in Design.
         </app-card>

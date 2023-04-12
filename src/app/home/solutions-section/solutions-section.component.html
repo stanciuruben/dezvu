@@ -1,6 +1,12 @@
 <app-article
   contentBackgroundImage="/assets/images/solution-box-bg-img.png"
   testAttribute="app-home__solutions"
+  leftClasses="slide-from-left invisible"
+  leftId="solutions-left"
+  rightClasses="slide-from-right invisible"
+  rightId="solutions-right"
+  contentClasses="fade-in invisible"
+  contentId="solutions-content"
 >
   <app-article-left>
     <app-card [rounded-tl]="false">
@@ -11,7 +17,6 @@
     <app-icon
       size="normal"
       src="/assets/images/solution-box-right-img.png"
-      ngClass="fade-in"
       id="solutions-icon"
     ></app-icon>
     <app-secondary-heading>

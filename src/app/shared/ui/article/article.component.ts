@@ -26,4 +26,10 @@ export class ArticleComponent {
   @Input() backgroundImage?: string;
   @Input() contentBackgroundImage?: string;
   @Input() testAttribute?: string;
+  @Input() leftClasses?: string;
+  @Input() leftId?: string;
+  @Input() rightClasses?: string;
+  @Input() rightId?: string;
+  @Input() contentClasses?: string;
+  @Input() contentId?: string;
 }

@@ -1,0 +1,100 @@
+@import "../../shared/style/animations.scss";
+@import "../../shared/style/variables.scss";
+
+app-article {
+  ::ng-deep {
+    & .article > {
+      & .article__content {
+        padding: 0;
+        & .article__content__left {
+          & app-article-left {
+            & .testimonials__img {
+              width: 100%;
+              transition: transform 0.4s ease;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+
+        & .article__content__right {
+          & app-article-right {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            & .testimonials__heading {
+              &__highlight {
+                font-weight: 700;
+                color: $primary-color;
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: 0.5rem;
+                  width: 100%;
+                  height: 0.5rem;
+                  background-color: $light-blue-color;
+                  z-index: -1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  app-article {
+    ::ng-deep {
+      & .article > {
+        & .article__content {
+          & .article__content__right {
+            & app-article-right {
+              gap: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  app-article {
+    ::ng-deep {
+      & .article > {
+        & .article__content {
+          flex-direction: column;
+          & .article__content__left {
+            max-width: 400px;
+          }
+
+          & .article__content__right {
+            & app-article-right {
+              gap: 0.5rem;
+              margin: 1rem 0;
+              text-align: center;
+
+              & .testimonials__slideshow__content {
+                max-width: 400px;
+                margin: 0 auto;
+              }
+              & .testimonials__slideshow__controls {
+                justify-content: center;
+                margin: 1rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

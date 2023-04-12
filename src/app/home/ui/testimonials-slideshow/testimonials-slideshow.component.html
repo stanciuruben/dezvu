@@ -1,0 +1,26 @@
+<div class="testimonials__slideshow" data-test="testimonials__slideshow">
+  <div class="testimonials__slideshow__content">
+    <app-testimonials-slideshow-item
+      *ngFor="let person of testimonials"
+      [name]="person.name"
+      [role]="person.role"
+      [comment]="person.comment"
+      [company]="person.company"
+    ></app-testimonials-slideshow-item>
+  </div>
+</div>
+<div class="testimonials__slideshow__controls">
+  <app-icon-button
+    [callback]="prev.bind(this)"
+    src="/assets/images/arrow.svg"
+    type="button"
+    testAttribute="testimonials__slideshow__button"
+    class="rotated"
+  ></app-icon-button>
+  <app-icon-button
+    [callback]="next.bind(this)"
+    src="/assets/images/arrow.svg"
+    type="button"
+    testAttribute="testimonials__slideshow__button"
+  ></app-icon-button>
+</div>

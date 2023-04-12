@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { SolutionsSectionComponent } from './solutions-section/solutions-section.component';
 import { ClientsSectionComponent } from './clients-section/clients-section.component';
+import { TestimonialsComponent } from './testimonials-section/testimonials-section.component';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import { ClientsSectionComponent } from './clients-section/clients-section.compo
     SolutionsSectionComponent,
     HeroSectionComponent,
     ClientsSectionComponent,
+    TestimonialsComponent,
   ],
 })
 export class HomeComponent {}

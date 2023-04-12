@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import type PrimaryButton from '../../types/primary-button';
+import type PrimaryButton from '../../types/button';
 
 @Component({
   selector: 'app-primary-button',

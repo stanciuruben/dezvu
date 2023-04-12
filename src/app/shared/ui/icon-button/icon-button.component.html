@@ -1,0 +1,19 @@
+<div class="icon-button-container">
+  <button
+    (click)="onClick()"
+    [type]="type ?? 'button'"
+    [class]="'icon-button ' + (class ? 'icon-button--' + class : '')"
+    attr.data-test="{{ testAttribute ?? 'app-icon-button' }}"
+    *ngIf="href === undefined"
+  >
+    <img [src]="src" alt="" />
+  </button>
+  <a
+    [class]="'icon-button ' + (class ? 'icon-button--' + class : '')"
+    [href]="href"
+    *ngIf="href"
+    attr.data-test="{{ testAttribute ?? 'app-icon-button' }}"
+  >
+    <img [src]="src" alt="" />
+  </a>
+</div>

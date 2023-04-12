@@ -1,4 +1,4 @@
-export default interface PrimaryButton {
+export default interface Button {
   text: string | undefined;
   href: string | undefined;
   testAttribute: string | undefined;

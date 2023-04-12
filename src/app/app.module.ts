@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainNavigationComponent } from './shared/main-navigation/main-navigation.component';
 import { HomeComponent } from './home/home.component';
 import { MissingPathComponent } from './shared/missing-path/missing-path.component';
+import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { MissingPathComponent } from './shared/missing-path/missing-path.compone
     BrowserModule,
     MainNavigationComponent,
     HomeComponent,
+    MainFooterComponent,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'services', component: HomeComponent },

@@ -13,6 +13,7 @@ import type PrimaryButton from '../../types/button';
 export class PrimaryButtonComponent {
   @Input() text: PrimaryButton['text'];
   @Input() href: PrimaryButton['href'];
+  @Input() size: PrimaryButton['size'];
   @Input() testAttribute: PrimaryButton['testAttribute'];
   @Input() type: PrimaryButton['type'];
   @Input() class: PrimaryButton['class'];

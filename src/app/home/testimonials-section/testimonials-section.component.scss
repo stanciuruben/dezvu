@@ -3,7 +3,9 @@
 
 app-article {
   ::ng-deep {
-    & .article > {
+    & .article {
+      margin-top: 10rem;
+
       & .article__content {
         padding: 0;
         & .article__content__left {

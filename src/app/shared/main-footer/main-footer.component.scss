@@ -1,0 +1,248 @@
+@import "../style/variables.scss";
+
+.main-footer {
+  padding: 5rem 0;
+  background-image: linear-gradient(to top, transparent 70%, $white-color),
+    url("/assets/images/weight-footer-img.jpg");
+  background-size: cover;
+  background-position: right;
+
+  &__content {
+    width: 1100px;
+    margin: 5rem auto;
+    display: flex;
+    gap: 3rem;
+
+    & > * {
+      width: 25%;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__logo {
+        width: 70%;
+        max-width: 150px;
+      }
+
+      &__text {
+        max-width: 310px;
+      }
+
+      &__social {
+        display: flex;
+        gap: 1rem;
+
+        &__link {
+          display: block;
+          transition: transform 0.3s ease;
+
+          & img {
+            height: 20px;
+            width: auto;
+          }
+
+          &:hover {
+            transform: translateY(-0.5rem);
+          }
+        }
+      }
+    }
+
+    &__quick-links {
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+        margin: 1rem 0;
+      }
+
+      &__link {
+        display: flex;
+        align-items: center;
+
+        & img {
+          margin: 0 0.5rem;
+          height: 0.8rem;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $text-color;
+          font-weight: 500;
+          font-family: Roboto;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    &__contact-info {
+      &__list {
+        & dt {
+          color: $primary-color;
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin-top: 0.5rem;
+          margin-bottom: 0.2rem;
+        }
+
+        & dd {
+          color: $text-color;
+        }
+      }
+    }
+
+    &__newsletter {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__input {
+        padding: 0.8rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        color: $text-color;
+        background-color: $white-color;
+        border: none;
+        outline: 0;
+      }
+
+      &__input:focus,
+      &__input:focus-visible {
+        border: 2px solid $primary-color;
+        outline: 0;
+      }
+    }
+  }
+
+  &__nav {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 2rem;
+    border-radius: 2rem;
+    border-top-left-radius: 0;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+
+      &__link {
+        & a {
+          text-decoration: none;
+          color: $white-color;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__text {
+      ::ng-deep {
+        .secondary-paragraph {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-footer {
+    &__content {
+      width: 900px;
+      margin: 5rem auto;
+      gap: 1rem;
+    }
+
+    &__nav {
+      width: 900px;
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .main-footer {
+    &__content {
+      width: calc(100% - 4rem);
+      margin: 2rem;
+    }
+
+    &__nav {
+      width: calc(100% - 4rem);
+      margin: 2rem;
+      padding: 1.5rem;
+
+      &__list {
+        gap: 1.5rem;
+
+        &__link {
+          & a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-footer {
+    padding-bottom: 0;
+    &__content {
+      width: calc(100% - 4rem);
+      margin: 2rem;
+      flex-wrap: wrap;
+
+      & > * {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+      }
+
+      &__quick-links {
+        &__list {
+          gap: 0.5rem;
+          align-items: center;
+        }
+
+        &__link {
+          width: 7rem;
+          text-align: left;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    &__nav {
+      width: 100%;
+      margin: 0;
+      padding: 2rem 0;
+      flex-direction: column;
+      gap: 2rem;
+      border-radius: 0;
+
+      &__list {
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+
+        &__link {
+          & a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,12 +4,18 @@ import { RouterModule } from '@angular/router';
 
 import { MainNavigationComponent } from './shared/main-navigation/main-navigation.component';
 import { HomeComponent } from './home/home.component';
+import { MainFooterComponent } from './shared/main-footer/main-footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
-      imports: [RouterModule, MainNavigationComponent, HomeComponent],
+      imports: [
+        RouterModule,
+        MainNavigationComponent,
+        HomeComponent,
+        MainFooterComponent,
+      ],
     }).compileComponents();
   });
 

@@ -5,6 +5,7 @@ app-article {
   ::ng-deep {
     & .article {
       padding: 5rem;
+      padding-bottom: 0;
 
       & > .article__content {
         padding: 0;
@@ -93,7 +94,9 @@ app-article {
   app-article {
     ::ng-deep {
       & .article {
-        padding: 5rem 0;
+        padding: 0;
+        padding-top: 5rem;
+
         & > .article__content {
           margin: 5rem auto;
           & > .article__content__right {
@@ -173,7 +176,9 @@ app-article {
   app-article {
     ::ng-deep {
       & .article {
-        padding: 4rem 0;
+        padding: 0;
+        padding-top: 4rem;
+
         & > .article__content {
           margin: 4rem 0;
           width: 100%;

@@ -3,6 +3,7 @@
 app-article {
   ::ng-deep {
     & .article {
+      margin: 10rem 0;
       & > .article__content {
         flex-direction: column;
         padding: 0;

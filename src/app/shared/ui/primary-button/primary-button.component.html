@@ -1,7 +1,11 @@
 <div class="primary-button-container">
   <button
     [type]="type ?? 'button'"
-    [class]="'primary-button ' + (class ? 'primary-button--' + class : '')"
+    [class]="
+      'primary-button ' +
+      (class ? 'primary-button--' + class : '') +
+      (size ? ' primary-button--' + size : '')
+    "
     attr.data-test="{{ testAttribute ?? 'app-primary-button' }}"
     *ngIf="href === undefined"
   >

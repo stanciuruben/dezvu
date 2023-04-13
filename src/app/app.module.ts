@@ -16,6 +16,7 @@ import { MainFooterComponent } from './shared/main-footer/main-footer.component'
     HomeComponent,
     MainFooterComponent,
     RouterModule.forRoot([
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'services', component: HomeComponent },
       { path: 'portfolio', component: HomeComponent },
